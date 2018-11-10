@@ -12,3 +12,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.active {
+  color: #3074ef;
+  font-weight: 700;
+}
+
+#root {
+  margin: 30px auto;
+  width: 100%;
+}
+
+.search-container {
+  width: 60% !important;
+  margin: 30px 0;
+}
+
+.loader {
+  position: fixed;
+  top: calc(50% - 75px);
+  left: calc(50% - 75px);
+}
+
+.table-container {
+  position: relative;
+}
+
+.btn-more {
+  margin: 0 auto;
+}
