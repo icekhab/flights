@@ -3,7 +3,7 @@ export default class FlightService {
         this.httpClient = httpClient;
     }
 
-    async get(direction = 'departure', page = 1, perPage = 10, flightNumber) {
+    async get(direction = 'departure', flightNumber = '', page = 1, perPage = 10) {
         const {REACT_APP_API_KEY, REACT_APP_AIRPORT_IATA} = process.env;
 
         let result = await this

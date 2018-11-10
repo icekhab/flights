@@ -29,7 +29,7 @@ export default class FlightProvider extends Component {
 
         const flightResult = await this
             .flightService
-            .get(filter.direction, filter.page, filter.perPage, filter.flightNumber);
+            .get(filter.direction, filter.flightNumber, filter.page, filter.perPage);
 
         if (flightResult.error) {
             this.setState({error: flightResult.error, loading: false});
@@ -71,7 +71,6 @@ export default class FlightProvider extends Component {
     }
 
     render() {
-
         return (
             <FlightContext.Provider value={{
                 flights: this.state.flights,

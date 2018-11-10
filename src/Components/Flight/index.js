@@ -13,9 +13,6 @@ const flightService = new FlightService(httpClient);
 const geoService = new GeoService(httpClient);
 
 export default class Flight extends Component {
-    componentDidMount() {
-    }
-
     render() {
         return (
             <FlightProvider

@@ -10,7 +10,6 @@ export default class FlightGrid extends Component {
             <FlightContext.Consumer>
                 {context => (
                     <div className="table-container">
-
                         {
                             context.error ?
                                 <div className="alert alert-danger" role="alert">{context.error}</div> : ''
@@ -58,8 +57,6 @@ export default class FlightGrid extends Component {
                                     }
                                     </tbody>
                                 </table>
-
-
                             </div>
                         }
 
@@ -68,8 +65,7 @@ export default class FlightGrid extends Component {
                                 sizeUnit={"px"}
                                 size={150}
                                 color={'#123abc'}
-                                loading={context.loading}
-                            />
+                                loading={context.loading}/>
                         </div>
 
 
@@ -84,12 +80,9 @@ export default class FlightGrid extends Component {
                                     : ''
                             }
                         </div>
-
-
                     </div>
                 )}
             </FlightContext.Consumer>
-
         );
     }
 }

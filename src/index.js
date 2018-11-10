@@ -10,7 +10,6 @@ ReactDOM.render(
     <BrowserRouter>
         <div>
             <Route exact path='/' render={() => <Redirect to='/departure'/>} />
-            {/*<Route exact path="/"  render={() => <Flight direction="departure" />} />*/}
             <Route path="/departure" render={() => <Flight direction="departure" />} />
             <Route path="/arrival" render={() => <Flight direction="arrival" />} />
         </div>
